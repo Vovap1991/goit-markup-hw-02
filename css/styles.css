@@ -6,6 +6,7 @@
 
 /* Common */
 body {
+  color: var(--primary-text-color);
   background-color: #ffffff;
 }
 
@@ -34,6 +35,7 @@ body {
 /* Header */
 .logo {
   color: var(--title-text-color);
+  text-decoration: none;
 }
 .logo-item {
   color: #4d5ae5;
@@ -41,10 +43,17 @@ body {
 
 .site-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .auth-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
