@@ -1,14 +1,116 @@
-/* Палитра цветов
-Одинаковое::
-1) Лого: web #4D5AE5     studio #2E2F42
-2) Основной текст: #2E2F42
-3) Альтернативный текст + контакты: #434455
-4) Футер: web #4D5AE5  studio #F4F4FD
-5) Текст в футере: #E7E9FC
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #404bbf;
+}
 
-MAIN PAGE
-1) H1 + кнопка: #FFFFFF
+/* Common */
+body {
+  background-color: #ffffff;
+}
 
-PORTFOLIO
-1) Фильтр: all #FFFFFF   остальное #4D5AE5
- */
+.list {
+  list-style: none;
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Main Page */
+/* Header */
+.logo {
+  color: var(--title-text-color);
+}
+.logo-item {
+  color: #4d5ae5;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.auth-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: #2e2f42;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+.hero-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* Advantages */
+
+.advantages-text {
+  color: var(--primary-text-color);
+}
+
+/* Team */
+
+.team-name {
+  color: var(--title-text-color);
+}
+.team-position {
+  color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+  color: #e7e9fc;
+}
+.logo-item-white {
+  color: #f4f4fd;
+}
+
+/* Portfolio */
+.filter-button {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
+}
